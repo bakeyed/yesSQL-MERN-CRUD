@@ -1,0 +1,47 @@
+.App {
+  height: 100vh;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column; /* Ensures h1 and buttons are on separate lines */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.books {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  max-width: 100%; /* Ensures the container doesn't exceed viewport width */
+  padding: 20px 0;
+}
+
+.book {
+  flex: 1 1 auto; /* Ensures books stay the same size and don't shrink */
+  margin-right: 10px; /* Adds spacing between books */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  background-color: rgb(131, 184, 227);
+}
+
+h1 {
+  margin-bottom: 15px; /* Adds space between heading and books */
+}
+
+.addBtn {
+  margin-top: 20px; /* Adds space between books and button */
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
